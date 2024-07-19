@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+    <style>
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+        .outer-container{
+                display: flex;
+                flex-direction: column;
+        }
+        .inner-container{
+            display: flex;
+            direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+        </div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens 1 e 2 ficam na mesma linha, enquanto o 3 fica numa outra linha</p>
+</body>
+</html>

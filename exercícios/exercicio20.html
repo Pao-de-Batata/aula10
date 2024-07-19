@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 20</title>
+    <style>
+       .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+       } 
+       .item{
+        flex: 1 1 200px;
+        align-self: stretch;
+        background-color: lightblue;
+       }
+       .item:nth-child(2){
+        flex-grow: 2;
+       }
+       .item:nth-child(4){
+        order: -1;
+        flex-basis: 300px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+    <p>O display é flex, ele está organizado em colunas, os itens estão alinhados centralmente na vertical, o espaço entre um item e outro é de 15 pixels, os itens estão esticados, o item 4 foi para o topo e é o maior ocupando 300 pixels, enquanto os outros itens ocupam 200 pixels e ao diminuir a janela o item 2 dobra de tamanho.</p>
+</body>
+</html>

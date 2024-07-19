@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 15</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: lightcoral;
+            margin: 10px;
+        }
+        .item:nth-child(1){
+            flex: 2 1 200px;
+        }
+        .item:nth-child(2){
+            flex: 1 1 100px;
+        }
+        .item:nth-child(3){
+            flex: 1 2 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Ao diminuirmos a janela o item 1 reduz sua largura pela metade, o item 2 se mantém com a mesma largura e o item 3 dobra de largura</p>
+</body>
+</html>

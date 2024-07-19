@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .item1 {
+            background-color: lightcoral;
+            margin: 10px;
+            flex-shrink: 1;
+            width: 300px;
+            height: 100px;
+        }
+
+        .item2 {
+            background-color: lightblue;
+            margin: 10px;
+            flex-shrink: 2;
+            width: 300px;
+            height: 100px;
+        }
+
+        .item3 {
+            background-color: lightgreen;
+            margin: 10px;
+            flex-shrink: 3;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+    <p>Ao diminuir a largura da janela o terceiro item é o que mais encolhe.</p>
+</body>
+</html>

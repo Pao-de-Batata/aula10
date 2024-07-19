@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 16</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .item{
+            background-color: lightcoral;
+            margin: 10px;
+           
+        }
+        @media (max-width: 600px){
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens estão justificados e alinhados em linha, quando o tamanho da janela é menor que 600 pixels os itens ficam centralizados e alinhados em coluna</p>
+</body>
+</html>
